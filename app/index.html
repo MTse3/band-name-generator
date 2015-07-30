@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Band Name Generator</title>
+  </head>
+  <body>
+    <h2>
+      Welcome To The Band Name Generator
+    </h2>
+    <button id="name">
+      Make me a Band Name!
+    </button>
+    <p>
+      Your name:
+      <span id="adjective">
+      </span>
+      <span id="verb">
+      </span>
+      <span id="noun">
+      </span>
+    </p>
+    <h3>Submit words for our awesome band name generator!</h3>
+     <form id="submitAdjectiveWord">
+       <label for="user-adjective">Add adjective:</label>
+       <input type="text" name="adjective" id="user-adjective"/>
+       <input type="submit" value="Submit Words"/>
+     </form>
+     <p id='adjectiveRes'></p>
+
+     <form id="submitVerbWord">
+       <label for="user-verb">Add verb:</label>
+       <input type="text" name="verb" id="user-verb"/>
+       <input type="submit" value="Submit Words"/>
+     </form>
+     <p id='verbRes'></p>
+
+     <form id="submitNounWord">
+       <label for="user-noun">Add noun:</label>
+       <input type="text" name="noun" id="user-noun"/>
+       <input type="submit" value="Submit Words"/>
+     </form>
+     <p id='nounRes'></p>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
