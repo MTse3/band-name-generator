@@ -23,6 +23,27 @@ $(function() {
     });
   });
 
+  $('#adjectiveButton').on('click', function() {
+    $.get('adjective', function(response) {
+      var adjective = response.word;
+      $('#adjective').text(adjective);
+    });
+  });
+
+  $('#verbButton').on('click', function() {
+    $.get('verb', function(response) {
+      var verb = response.word;
+      $('#verb').text(verb);
+    });
+  });
+
+  $('#nounButton').on('click', function() {
+    $.get('noun', function(response) {
+      var noun = response.word;
+      $('#noun').text(noun);
+    });
+  });
+
   //make an event handler that, when the button is clicked
   //sends a POST request to our server
   $('#submitAdjectiveWord').on('submit', function(e) {
